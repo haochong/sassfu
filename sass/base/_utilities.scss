@@ -1,3 +1,10 @@
+@mixin text-overflow($width) {
+    width: #{$width};
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 @mixin opacity($percent) {
     filter: alpha(opacity=#{$percent*100}); /* ie5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$percent*100})"; /* ie8 */
